@@ -177,7 +177,11 @@ a:active {
 
 /*header start*/
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 40px 20px 0 20px;
 }
@@ -216,9 +220,16 @@ a:active {
 
 /*main start*/
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 157px;
   max-width: 285px;
@@ -234,7 +245,11 @@ a:active {
   margin-top: 30px;
 }
 .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: "SF Pro Text", sans-serif;
   font-size: 17px;
@@ -265,8 +280,12 @@ a:active {
 
 .card-container {
   margin-top: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .card {
@@ -318,8 +337,14 @@ a:active {
 .discount-circle {
   font-size: 10px;
   line-height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 30px;
   height: 30px;
@@ -330,6 +355,8 @@ a:active {
   right: 0;
 }
 .card-active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 1;
 }
@@ -338,6 +365,14 @@ a:active {
   font-size: 17px;
   line-height: 17px;
   text-align: center;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#1987ff),
+    to(#19ccff)
+  );
+  background: -o-linear-gradient(right, #1987ff 0%, #19ccff 100%);
   background: linear-gradient(270deg, #1987ff 0%, #19ccff 100%);
   border-radius: 30px;
   color: #ffffff;
@@ -348,8 +383,13 @@ a:active {
 
 /*footer start*/
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-family: "Roboto";
   font-style: normal;
@@ -365,12 +405,14 @@ a:active {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.5;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   margin-bottom: 16px;
 }
 .link-Teams,
 .link-priacy {
   color: #bdc0d0;
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
 .link-Teams {
