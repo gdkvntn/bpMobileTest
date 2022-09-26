@@ -130,18 +130,21 @@ table {
 @font-face {
   font-family: "SF Pro Text";
   src: url("./Assets/fonts/1c45e28f8e86cc89876f003b953cc3e9.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
   src: url("./Assets/fonts/SFPRODISPLAYREGULAR.OTF");
+  font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   src: url("./Assets/fonts/SFPRODISPLAYBOLD.OTF");
+  font-display: swap;
 }
 
 /*global start*/
