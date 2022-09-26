@@ -26,12 +26,8 @@ btnContinue.addEventListener("touchstart", () => {
   }
 });
 
-cardOne.addEventListener("touchstart", () => cardSelection(cardOne), {
-  passive: true,
-});
-cardSec.addEventListener("touchstart", () => cardSelection(cardSec), {
-  passive: true,
-});
+cardOne.addEventListener("touchstart", () => cardSelection(cardOne));
+cardSec.addEventListener("touchstart", () => cardSelection(cardSec));
 
 function changeLang() {
   let langData;
