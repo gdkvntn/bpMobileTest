@@ -3,13 +3,14 @@ const cardOne = document.querySelector(".card-first");
 const cardSec = document.querySelector(".card-sec");
 const title = document.querySelector(".title");
 const main = document.querySelector(".main");
+const body = document.querySelector("body");
 
 const btnContinue = document.querySelector(".continue");
 let lang = navigator.language.slice(0, 2);
 console.log(navigator.language.slice(0, 2));
 const allLang = ["en", "ru", "es", "fr", "ja", "nl", "zh"];
 
-if (innerHeight < 785) {
+if (body.clientHeight < 785) {
   main.style.marginTop = "50px";
 }
 
