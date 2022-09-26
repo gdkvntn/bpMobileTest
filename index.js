@@ -10,7 +10,7 @@ let lang = navigator.language.slice(0, 2);
 console.log(navigator.language.slice(0, 2));
 const allLang = ["en", "ru", "es", "fr", "ja", "nl", "zh"];
 
-if (body.clientHeight < 785) {
+if (innerHeight < 785) {
   main.style.marginTop = "50px";
 }
 
