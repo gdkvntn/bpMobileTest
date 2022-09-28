@@ -4,6 +4,7 @@ const cardSec = document.querySelector(".card-sec");
 const title = document.querySelector(".title");
 const main = document.querySelector(".main");
 const body = document.querySelector("body");
+const arrLang = document.querySelectorAll(".lang");
 
 const btnContinue = document.querySelector(".continue");
 let lang = navigator.language.slice(0, 2);
@@ -48,38 +49,10 @@ function changeLang() {
       langData = data;
     })
     .then(() => {
-      document.querySelector(".title").innerHTML =
-        langData["Unlimited Access<br>to All Features"];
-      document.querySelector(".list-item_first").innerHTML =
-        langData["Unlimited documents"];
-      document.querySelector(".list-item_sec").innerHTML =
-        langData["Export to clouds"];
-      document.querySelector(".list-item_third").innerHTML =
-        langData["Text recognition (OCR)"];
-      document.querySelector(".card-title").innerHTML = langData["Monthly"];
-      document.querySelector(".card-title_sec").innerHTML =
-        langData["Annually"];
-      document.querySelector(".card-price").innerHTML =
-        langData["<strong>{{price}}</strong><br>per month"];
-      document.querySelector(".card-line").innerHTML = langData["3 DAYS FREE"];
-      document.querySelector(".card-price-bot").innerHTML =
-        langData["{{price}}/month"];
-      document.querySelector(".interest").innerHTML = langData["-83%"];
-      document.querySelector(".card-price_sec").innerHTML =
-        langData["<strong>{{price}}</strong><br>per year"];
-      document.querySelector(".card-line_sec").innerHTML =
-        langData["MOST POPULAR"];
-      document.querySelector(".continue").innerHTML = langData["Continue"];
-      document.querySelector(".auto-rewable").innerHTML =
-        langData["Auto-renewable. Cancel anytime."];
-      document.querySelector(".link-Teams").innerHTML =
-        langData["Terms of Use"];
-      document.querySelector(".header-restore_link").innerHTML =
-        langData["Restore"];
-      document.querySelector(".link-priacy").innerHTML =
-        langData["Privacy Policy"];
-      document.querySelector(".card-price-bot_sec").innerHTML =
-        langData["{{priceSec}}/month"];
+      arrLang.forEach((el) => {
+        data = el.dataset.lang;
+        el.innerHTML = langData[data];
+      });
     })
     .then(() => {
       if (lang === "ru") {
@@ -93,5 +66,3 @@ function changeLang() {
     });
 }
 changeLang();
-
-// document.querySelector('').innerHTML = langData[]

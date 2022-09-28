@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./min.style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,50 +16,50 @@
 <body>
     <header class="header">
         <div class="header-close">
-            <span class="header-close_line "></span>
-            <span class="header-close_line "></span>
+            <span class="header-close_line"></span>
+            <span class="header-close_line"></span>
         </div>
-        <div class="header-restore"><a href="#" class="header-restore_link"></a></div>
+        <div class="header-restore"><a href="#" class="header-restore_link lang" data-lang="Restore"></a></div>
     </header>
     <main class="main">
 
-        <h1 class="title"></h1>
+        <h1 class="title lang" data-lang="Unlimited Access<br>to All Features"></h1>
         <ul class="list">
-            <li class="list-item list-item_first"></li>
-            <li class="list-item list-item_sec"></li>
-            <li class="list-item list-item_third"></li>
+            <li class="list-item list-item_first lang" data-lang="Unlimited documents"></li>
+            <li class="list-item list-item_sec lang" data-lang="Export to clouds"></li>
+            <li class="list-item list-item_third lang" data-lang="Text recognition (OCR)"></li>
         </ul>
         <div class="card-container">
             <div class="card card-first card-active">
-                <h2 class="card-title"></h2>
-                <div class="card-price">
+                <h2 class="card-title lang" data-lang="Monthly"></h2>
+                <div class="card-price lang" data-lang="<strong>{{price}}</strong><br>per month">
 
                 </div>
-                <div class="card-line"></div>
-                <div class="card-price-bot"></div>
+                <div class="card-line lang" data-lang="3 DAYS FREE"></div>
+                <div class="card-price-bot lang" data-lang="{{price}}/month"></div>
 
             </div>
             <div class="card card-sec">
-                <h2 class="card-title card-title_sec"></h2>
-                <div class="card-price card-price_sec">
+                <h2 class="card-title card-title_sec lang" data-lang="Annually"></h2>
+                <div class="card-price card-price_sec lang" data-lang="<strong>{{price}}</strong><br>per year">
 
                 </div>
-                <div class="card-line card-line_sec"></div>
-                <div class="card-price-bot card-price-bot_sec"></div>
-                <div class="discount-circle"><span class="interest"></span> </div>
+                <div class="card-line card-line_sec lang" data-lang="MOST POPULAR"></div>
+                <div class="card-price-bot card-price-bot_sec lang" data-lang="{{priceSec}}/month"></div>
+                <div class="discount-circle"><span class="interest lang" data-lang="-83%"></span> </div>
             </div>
         </div>
-        <a class="continue"></a>
+        <a class="continue lang" data-lang="Continue"></a>
 
 
     </main>
     <footer class="footer">
-        <p class="auto-rewable"></p>
-        <a href="#" class="link-Teams"></a>
-        <a href="#" class="link-priacy"></a>
+        <p class="auto-rewable lang" data-lang="Auto-renewable. Cancel anytime."></p>
+        <a href="#" class="link-Teams lang" data-lang="Terms of Use"></a>
+        <a href="#" class="link-priacy lang" data-lang="Privacy Policy"></a>
         <div class="home-indicator"></div>
     </footer>
-    <script src="./min.index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

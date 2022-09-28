@@ -129,21 +129,21 @@ table {
 
 @font-face {
   font-family: "SF Pro Text";
-  src: url("./Assets/fonts/1c45e28f8e86cc89876f003b953cc3e9.ttf");
+  src: url("./Assets/fonts/sf-pro-text-regular.woff");
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
-  src: url("./Assets/fonts/SFPRODISPLAYREGULAR.OTF");
+  src: url("./Assets/fonts/SF-Pro-Display-Regular.woff");
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
-  src: url("./Assets/fonts/SFPRODISPLAYBOLD.OTF");
+  src: url("./Assets/fonts/SF-Pro-Display-Bold.woff");
   font-display: swap;
 }
 
@@ -164,7 +164,7 @@ body {
   font-weight: 400;
   letter-spacing: -0.216667px;
   color: #fff;
-  background-image: url(./Assets/img/4@2x.webp);
+  background-image: url(./Assets/img/X.webp);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -429,6 +429,17 @@ a:active {
   background: #ffffff;
   border-radius: 100px;
   margin-top: 27px;
+}
+
+@media screen and (min-width: 390px) {
+  body {
+    background-image: url(./Assets/img/12.webp);
+  }
+}
+@media screen and (min-width: 414px) {
+  body {
+    background-image: url(./Assets/img/8plus.webp);
+  }
 }
 
 @media screen and (max-height: 785px) {
